@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet"> 
+    
   <title>Frontend Mentor | Article preview component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,21 +19,45 @@
 </head>
 <body>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+  <main>
+    <article>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+      <img src="/images/drawers.jpg" alt="">
 
-  Michelle Appleton
-  28 Jun 2020
+      <header>
+        <h2>Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home</h2>
+      </header>
+      
+      <section>
+        <p>Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.</p>
+      </section>
+      
+      <footer>
+        <p class='off'>Share</p>
+        <div class='author'>
+          <img src="/images/avatar-michelle.jpg" alt="">
+          <p>Michelle Appleton <br>
+            28 Jun 2020</p>
+        </div>
+        <div class="share_Wrap off">
+            <div class="facebook">FB</div>
+            <div class="twitter">Tw</div>
+            <div class="pinterest">Pi</div>
+            <div class="share">Share</div>
+        </div>
+      </footer>
 
-  Share
+      </article>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
 </body>
 </html>
