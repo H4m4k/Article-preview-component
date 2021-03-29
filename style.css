@@ -37,18 +37,38 @@ img[src*='drawers.jpg'] {
 header > h2 {
     font-size: larger;
     margin: 8% 0 0 0;
+    letter-spacing: 1px;
 }
 
 .author {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .author > img{
     align-self: center;
-    width: 13%;
+    width: 15%;
     border-radius: 50%;
 }
+
+.author > p {
+    margin: 8% 10% 9% 0;
+}
+
+.author > div {
+    align-self: center;
+    background-color: hsl(210, 46%, 95%);
+    padding: 3%;
+    border-radius: 50%;
+}
+
+.author > div > img[src*='share.svg'] {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+
 
 .attribution {
     grid-area: 3/1 / 4/4;
