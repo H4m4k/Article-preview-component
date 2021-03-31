@@ -23,7 +23,7 @@ article {
     background-color: white;
     grid-area: 2/2 / 3/3;
 
-    border-radius: 5%;
+    border-radius: 3%;
 
     display: grid;
     grid-template: 2fr 1fr 1fr min-content / 1fr;
@@ -31,7 +31,7 @@ article {
 
 img[src*='drawers.jpg'] { 
     width: inherit; 
-    border-radius: 5% 5% 0 0;
+    border-radius: 3% 3% 0 0;
 }
 
 header > h2 {
@@ -60,6 +60,7 @@ header > h2 {
     background-color: hsl(210, 46%, 95%);
     padding: 3%;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .author > div > img[src*='share.svg'] {
@@ -68,7 +69,25 @@ header > h2 {
     align-self: center;
 }
 
+.share_Wrap {
+    display: flex;
+    place-content: space-evenly;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0 0 3% 3%;
+}
 
+.share_Wrap > p {
+    color: hsl(212, 23%, 69%);
+    letter-spacing: 4px;
+}
+
+.share {
+    align-self: center;
+    background-color: hsl(212, 23%, 69%);
+    padding: 3%;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 .attribution {
     grid-area: 3/1 / 4/4;
@@ -81,11 +100,11 @@ header > h2 {
     height: 92%;
 }
 
-.padding { padding: 0 10% }
+.padding { padding: 0 8% }
 .justify { text-align: justify;}
 .dark_Grey {color:hsl(217, 19%, 35%)}
 .desaturated_Grey {color: hsl(214, 17%, 51%)}
 .light_Grey {color: hsl(212, 23%, 69%)}
 .bold { font-weight: bold;}
-
+.align_Center { align-self: center;}
 .off { display: none; }
