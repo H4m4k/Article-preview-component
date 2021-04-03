@@ -19,14 +19,18 @@ main {
 
 article {
     width: 100%;
-    height: 90%;
+    height: min-content;
     background-color: white;
     grid-area: 2/2 / 3/3;
 
-    border-radius: 3%;
+    border-radius: 10px;
 
     display: grid;
-    grid-template: 2fr 1fr 1fr min-content / 1fr;
+    grid-template: min-content min-content / 1fr;
+}
+
+article > section > p {
+    margin-bottom: 7%;
 }
 
 img[src*='drawers.jpg'] { 
@@ -36,8 +40,13 @@ img[src*='drawers.jpg'] {
 
 header > h2 {
     font-size: larger;
-    margin: 8% 0 0 0;
+    margin: 0;
     letter-spacing: 1px;
+}
+
+.share_Wraper {
+    display: flex;
+    border-radius: 0 0 7px 7px;
 }
 
 .author {
@@ -52,33 +61,21 @@ header > h2 {
 }
 
 .author > p {
-    margin: 8% 10% 9% 0;
-}
-
-.author > div {
-    align-self: center;
-    background-color: hsl(210, 46%, 95%);
-    padding: 3%;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.author > div > img[src*='share.svg'] {
-    width: 100%;
-    height: auto;
+    margin: 0 20% 0 0;
     align-self: center;
 }
 
-.share_Wrap {
+.share_Icons {
     display: flex;
-    place-content: space-evenly;
-    background-color: hsl(217, 19%, 35%);
-    border-radius: 0 0 3% 3%;
+    place-content: start;
+    width: 100%;
+    gap: 7%;
 }
 
-.share_Wrap > p {
+.share_Icons > p {
     color: hsl(212, 23%, 69%);
     letter-spacing: 4px;
+    padding-right: 2%;
 }
 
 .share {
@@ -87,6 +84,7 @@ header > h2 {
     padding: 3%;
     border-radius: 50%;
     cursor: pointer;
+    margin: 5% 0;
 }
 
 .attribution {
@@ -97,7 +95,7 @@ header > h2 {
 .img_Wrap { 
     overflow: hidden;
     width: 100%;
-    height: 92%;
+    height: 82%;
 }
 
 .padding { padding: 0 8% }
@@ -108,3 +106,29 @@ header > h2 {
 .bold { font-weight: bold;}
 .align_Center { align-self: center;}
 .off { display: none; }
+.dark_Bg { background-color: hsl(217, 19%, 35%)}
+
+
+@media screen and (min-width: 376px) {
+
+    main {
+        grid-template: auto min-content auto / 1fr 3fr 1fr;
+    }
+
+    article {
+        grid-template: repeat(3,1fr)/ 1fr 1fr;
+        height: 90%;
+    }
+
+   .img_Wrap{
+        grid-area: 1/1 / 4/2;
+        height: 100%;
+        width: 85%;
+    }
+
+    .img_Wrap > img {
+        border-radius: 10px 0 0 10px;
+        height: inherit;
+        width: 124%;
+    }
+}
